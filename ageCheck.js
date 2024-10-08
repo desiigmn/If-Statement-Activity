@@ -1,7 +1,9 @@
 function ageCheck() {
     let age = prompt("Enter your age:");
 
-    if (age < 13) {
+    if (age === null || age === "") {
+    alert("Input was canceled.");
+    }else if (age < 13) {
     alert("You are a child.");
     } else if (age >= 13 && age <= 19) {
     alert("You are a teenager.");
